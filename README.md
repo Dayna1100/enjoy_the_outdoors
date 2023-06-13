@@ -1,1 +1,1 @@
-# enjoy_the_outdoors
+# Enjoy the Outdoors Capstone Project
