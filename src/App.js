@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //*import './App.css';*//
 import Navigation from "./Navigation/Nav";
 import { useState } from "react";
