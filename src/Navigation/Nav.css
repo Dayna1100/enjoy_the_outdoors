@@ -23,7 +23,6 @@ ul {
   }
 
   nav img {
-    display:flex;
     width: 50px;
     height: 50px;
     float: left;
