@@ -27,3 +27,89 @@ ul {
     height: 50px;
     float: left;
   }
+/* Make the image larger on devices with a screen width of 768px or more */
+@media only screen and (min-width: 768px) {
+  nav img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Make the image even larger on devices with a screen width of 1200px or more */
+@media only screen and (min-width: 1200px) {
+  nav img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+}
+
+.menu-icon__line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 70px;  /* was 100% */
+  left: -100%;    /* was 0 */
+  opacity: 0;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  }
+
+.menu-list--active {
+  left: 0;
+  opacity: 1;
+  /* visibility: visible;  */
+  
+}
+
+.menu-list li {
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  
+  .menu-list {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+    flex-direction: row;
+  }
+  
+  .menu-list li {
+    margin: 0 15px;
+  }
+}
