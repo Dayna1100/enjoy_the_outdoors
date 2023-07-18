@@ -11,7 +11,7 @@ const Navigation = ({ page, setPage }) => {
 
   return (
     <nav className="nav">
-      <img src="./pics/campinggreen.jpg" width="30" height="30" alt="Our logo"></img>
+      <img src="./pics/logo.png" width="30" height="30" alt="Our logo"></img>
       <div className="menu-icon" onClick={toggleMenu}>
         <span className="menu-icon__line"></span>
         <span className="menu-icon__line"></span>
